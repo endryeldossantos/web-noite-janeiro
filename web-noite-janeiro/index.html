@@ -1,74 +1,112 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfólio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <nav>
-        <a href="#s1">Apresentação</a>
-        <a href="#s2">Projetos</a>
-        <a href="#s3">Vídeo</a>
-        <a href="#s4">Contato</a>
+      <a href="#s1">Apresentação</a>
+      <a href="#s2">Projetos</a>
+      <a href="#s3">Vídeo</a>
+      <a href="#s4">Contato</a>
     </nav>
     <main>
-        <section id="s1">
-            <div class="imgDiv">
-                <img class="imgStyle" src="./images/perfil.png" alt="Perfil">
-            </div>
-            <div class="textDiv">
-               <h2>pikachu</h2>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quia cumque voluptatem numquam sit aspernatur saepe ipsa libero corporis animi asperiores explicabo, minima voluptas, cum optio voluptate incidunt veniam dolorem?</p>
-            </div>
-        </section>
+      <section id="s1">
+        <div class="imgDiv">
+          <img class="imgStyle" src="./images/perfil.png" alt="Perfil" />
+        </div>
+        <div class="textDiv">
+          <h2>Pokémon</h2>
+          <p>
+            Pokémon é uma série japonesa sobre criaturas chamadas “monstros de bolso”,
+             que os treinadores capturam, treinam e usam em batalhas.
+              Existem vários tipos de Pokémon com elementos, como fogo, água e elétrico,
+               cada um com habilidades diferentes.
+                Pikachu é o Pokémon mais famoso.
+                Ele é do tipo elétrico, amarelo,
+                e usa ataques de energia como o Choque do Trovão
+                . É o parceiro do personagem principal do anime e
+                o mascote da franquia Pokémon.
+          </p>
+        </div>
+      </section>
 
-        <section id="s2">
-            <h1>Projetos</h1>
-             <section id="s2">
-            <h1>Projetos</h1>
-            <div class="wrapCards">
-                <div class="cards">
-                    <h3>PROJETO 01</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                    <hr>
-                    <a href="">Ir para o repositório</a>
-                </div>
-                <div class="cards">
-                    <h3>PROJETO 02</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                    <hr>
-                    <a href="">Ir para o repositório</a>
-                </div>
-                <div class="cards">
-                    <h3>PROJETO 04</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                    <hr>
-                    <a href="">Ir para o repositório</a>
-                </div>
-            </div>
-        </section>
- 
-        </section>
+      <section id="s2">
+        <h1>Projetos</h1>
+        <div class="wrapCards">
+          <div class="cards">
+            <h3>wikepédia</h3>
+            <p>Informação sobre pokémon</p>
+            <hr />
+            <a
+              href="https://pt.wikipedia.org/wiki/Pok%C3%A9mon"
+              target="_blank"
+              >Ir para a wikipédia</a
+            >
+          </div>
+          <div class="cards">
+            <h3>jogos</h3>
+            <p>Informação sobre os jogos</p>
+            <hr />
+            <a href="https://pt.wikipedia.org/wiki/Pok%C3%A9mon_(s%C3%A9rie_de_jogos_eletr%C3%B4nicos)" target="_blank"
+              >Ir para os jogos-de-pokémon</a
+            >
+          </div>
+          <div class="cards">
+            <h3>Cartas</h3>
+            <p>Informação sobre as Cartas</p>
+            <hr />
+            <a
+              href="https://www.pokemon.com/br/pokemon-estampas-ilustradas/cartas-de-pokemon"
+              target="_blank"
+              >Ir para as cartas-de-pokémon</a
+            >
+          </div>
+        </div>
+      </section>
 
-        <section id="s3">
-            <h1>terceiro</h1>
-        </section>
+      <section id="s3">
+        <h2>Video</h2>
+        <iframe class="videoStyle"
+         src="https://www.youtube.com/embed/IMSt_hMXke8?si=sWD5-l-VjrBkIhVH"
+          title="YouTube video player" frameborder="0" allow="accelerometer;
+           autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </section>
 
-        <section id="s4">
-            <h1>quarto</h1>
-        </section>
+      <section id="s4">
+        <h2>Contato</h2>
+        <div class="formulario">
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" placeholder="Digite seu nome"><br><br>
+            <label for="assunto">Mensagem:</label><br>
+            <textarea id="assunto" placeholder="Digite uma mensagem"></textarea><br><br>
+            <button onclick="enviar()">ENVIAR</button>
+        </div>
+      </section>
     </main>
     <footer>
-        <img src="" alt="Linkedin">
-        <img src="" alt="Instagram">
-        <img src="" alt="Github">
-        <img src="" alt="Facebook">
+        <a href="https://www.instagram.com/pokemonbrasil/" target="_blank">
+        <img src="./images/instagram.png" alt="Instagram" />
+      </a>
+
+        <a href="https://www.facebook.com/PokemonOficialBr/?brand_redir=230809307041021" target="_blank">
+            <img src="./images/facebook.png" alt="Facebook" />
+        </a>
+
+         <a href="https://www.nintendo.com/pt-br/store/games/pokemon-games/?srsltid=AfmBOor5PJDRifmkgsYEdsbJy1_lXiK9_L8K1HPgvVYxvnOcDoZ7cXZb#sort=df&p=0" target="_blank">
+        <img src="./images/nintendo-switch.png" alt="nintendo-switch" />
+      </a>
     </footer>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
